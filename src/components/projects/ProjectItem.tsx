@@ -1,26 +1,29 @@
 interface ProjectItemInfo {
   title: string;
   technology: string;
-  backgroundImg: string;
+  imageSrc: string;
   projectUrl: string;
 }
 
-export const ProjectItem = (ProjectItemInfo: ProjectItemInfo) => {
+export const ProjectItem: React.FC<ProjectItemInfo> = ({
+  title,
+  technology,
+  imageSrc,
+  projectUrl,
+}) => {
   return (
     <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]'>
       <img
         className='rounded-xl group-hover:opacity-20'
-        src={ProjectItemInfo.backgroundImg}
+        src={imageSrc}
         alt=''
       />
       <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
         <h3 className='text-2xl text-white tracking-wider text-center'>
-          {ProjectItemInfo.title}
+          {title}
         </h3>
-        <p className='pb-4 pt-2  text-white text-center'>
-          {ProjectItemInfo.technology}
-        </p>
-        <a href={ProjectItemInfo.projectUrl}>
+        <p className='pb-4 pt-2  text-white text-center'>{technology}</p>
+        <a href={projectUrl}>
           <p className='text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>
             More info
           </p>

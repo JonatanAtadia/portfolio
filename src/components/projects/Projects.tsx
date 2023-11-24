@@ -1,5 +1,32 @@
 import { ProjectItem } from './ProjectItem';
 
+const projectsList = [
+  {
+    title: 'titulo1',
+    technology: 'tecnologias que utliza',
+    imageSrc: './src/assets/FondoSmartFinance.jpg',
+    projectUrl: '/property',
+  },
+  {
+    title: 'titulo2',
+    technology: 'tecnologias que utliza',
+    imageSrc: './src/assets/FondoSmartFinance.jpg',
+    projectUrl: '/property',
+  },
+  {
+    title: 'titulo3',
+    technology: 'tecnologias que utliza',
+    imageSrc: './src/assets/FondoSmartFinance.jpg',
+    projectUrl: '/property',
+  },
+  {
+    title: 'titulo4',
+    technology: 'tecnologias que utliza',
+    imageSrc: './src/assets/FondoSmartFinance.jpg',
+    projectUrl: '/property',
+  },
+];
+
 export const Projects = () => {
   return (
     <div id='projects' className='w-full'>
@@ -9,30 +36,9 @@ export const Projects = () => {
         </p>
         <h2 className='py-4'>What I've Build</h2>
         <div className='grid md:grid-cols-2 gap-8'>
-          <ProjectItem
-            title='titulo del proyecto'
-            technology='tecnologias que utliza'
-            backgroundImg='./src/assets/FondoSmartFinance.jpg'
-            projectUrl='/property'
-          />
-          <ProjectItem
-            title='titulo del proyecto 2'
-            technology='tecnologias que utliza'
-            backgroundImg='./src/assets/FondoSmartFinance.jpg'
-            projectUrl='link del proyecto 2'
-          />
-          <ProjectItem
-            title='titulo del proyecto 3'
-            technology='tecnologias que utliza'
-            backgroundImg='./src/assets/FondoSmartFinance.jpg'
-            projectUrl='link del proyecto 3'
-          />
-          <ProjectItem
-            title='titulo del proyecto 4'
-            technology='tecnologias que utliza'
-            backgroundImg='./src/assets/FondoSmartFinance.jpg'
-            projectUrl='link del proyecto 4'
-          />
+          {projectsList.map((project, index) => (
+            <ProjectItem key={index} {...project} />
+          ))}
         </div>
       </div>
     </div>

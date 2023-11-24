@@ -1,6 +1,6 @@
 import { SkillItem } from './SkillItem';
 
-const skillsItems = [
+const skillsList = [
   { src: './src/assets/skills/HTML.png', name: 'HTML' },
   { src: './src/assets/skills/CSS.png', name: 'CSS' },
   { src: './src/assets/skills/REACT.png', name: 'React' },
@@ -16,7 +16,7 @@ export const Skills = () => {
         </p>
         <h2 className='py-4'>What I Can Do</h2>
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
-          {skillsItems.map((skill, index) => (
+          {skillsList.map((skill, index) => (
             <SkillItem key={index} {...skill} />
           ))}
         </div>
