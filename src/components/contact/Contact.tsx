@@ -1,5 +1,5 @@
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
-import { Social } from './Social';
+import { Social } from '../social/Social';
 
 export const Contact = () => {
   return (

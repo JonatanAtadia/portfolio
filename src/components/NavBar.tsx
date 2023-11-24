@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Logo } from './Logo';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { Social } from './Social';
+import { Social } from './social/Social';
 
 export const NavBar = () => {
   const [nav, setNav] = useState(false);

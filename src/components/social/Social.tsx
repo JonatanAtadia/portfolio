@@ -2,7 +2,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
-const socialIcons = [
+const socialItems = [
   {
     icon: <FaLinkedinIn />,
     name: 'LinkedIn',
@@ -24,7 +24,7 @@ const socialIcons = [
 export const Social = () => {
   return (
     <>
-      {socialIcons.map((social, index) => (
+      {socialItems.map((social, index) => (
         <div key={index} className='socialBtn' title={social.name}>
           {social.icon}
         </div>

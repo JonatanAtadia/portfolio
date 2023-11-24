@@ -1,6 +1,6 @@
-import { Social } from './Social';
+import { Social } from '../social/Social';
 
-export const Main = () => {
+export const Home = () => {
   return (
     <div id='home' className='w-full h-screen text-center'>
       <div className='max-w-[1240px] w-full h-full mx-auto p-w flex justify-center items-center'>
