@@ -1,7 +1,31 @@
 import { useState, useEffect } from 'react';
 import { Logo } from './Logo';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { Social } from './social/Social';
+import { Social } from '../social/Social';
+import { MenuLinkItem } from './MenuLinkItem';
+
+const menuLinkList = [
+  {
+    name: 'Home',
+    href: '/#home',
+  },
+  {
+    name: 'About',
+    href: '/#about',
+  },
+  {
+    name: 'Skills',
+    href: '/#skills',
+  },
+  {
+    name: 'Projects',
+    href: '/#projects',
+  },
+  {
+    name: 'Contact',
+    href: '/#contact',
+  },
+];
 
 export const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -50,27 +74,13 @@ export const NavBar = () => {
       }
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-        <a href='/#home'>
-          <Logo />
-        </a>
+        <Logo />
 
         <div>
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <a href='/#home'>Home</a>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <a href='/#about'>About</a>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <a href='/#skills'>Skills</a>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <a href='/#projects'>Projects</a>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
-              <a href='/#contact'>Contact</a>
-            </li>
+            {menuLinkList.map((menuLink, index) => (
+              <MenuLinkItem key={index} {...menuLink} />
+            ))}
           </ul>
           <div onClick={handleNav} className='md:hidden cursor-pointer'>
             <AiOutlineMenu size={30} />
@@ -108,21 +118,13 @@ export const NavBar = () => {
           </div>
           <div className='py-4 flex flex-col'>
             <ul className='uppercase'>
-              <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                <a href='/#home'>Home</a>
-              </li>
-              <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                <a href='/#about'>About</a>
-              </li>
-              <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                <a href='/#skills'>Skills</a>
-              </li>
-              <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                <a href='/#projects'>Projects</a>
-              </li>
-              <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                <a href='/#contact'>Contact</a>
-              </li>
+              {menuLinkList.map((menuLink, index) => (
+                <MenuLinkItem
+                  key={index}
+                  {...menuLink}
+                  onClick={() => setNav(false)}
+                />
+              ))}
             </ul>
 
             <div className='pt-40 '>

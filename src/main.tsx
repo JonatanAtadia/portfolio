@@ -4,7 +4,7 @@ import App from './App.tsx';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Property } from './components/pages/Property.tsx';
-import { NavBar } from './components/NavBar.tsx';
+import { NavBar } from './components/menu/NavBar.tsx';
 
 const router = createBrowserRouter([
   {
