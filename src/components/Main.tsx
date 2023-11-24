@@ -1,6 +1,4 @@
-import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { Social } from './Social';
 
 export const Main = () => {
   return (
@@ -21,18 +19,7 @@ export const Main = () => {
             ratione nisi atque nulla aliquid explicabo!
           </p>
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
-              <FaLinkedinIn />
-            </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
-              <FaGithub />
-            </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
-              <AiOutlineMail />
-            </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
-              <BsFillPersonLinesFill />
-            </div>
+            <Social />
           </div>
         </div>
       </div>

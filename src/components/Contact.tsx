@@ -1,7 +1,5 @@
-import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
+import { Social } from './Social';
 
 export const Contact = () => {
   return (
@@ -33,18 +31,7 @@ export const Contact = () => {
               <div>
                 <p className='uppercase pt-8'>Connect with me</p>
                 <div className='flex items-center justify-between py-4'>
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
-                    <FaLinkedinIn />
-                  </div>
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
-                    <FaGithub />
-                  </div>
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
-                    <AiOutlineMail />
-                  </div>
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
-                    <BsFillPersonLinesFill />
-                  </div>
+                  <Social />
                 </div>
               </div>
             </div>
