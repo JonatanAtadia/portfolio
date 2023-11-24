@@ -1,3 +1,5 @@
+import { SkillItem } from './SkillItem';
+
 export const Skills = () => {
   return (
     <div id='skills' className='w-full lg:h-screen p-2'>
@@ -7,53 +9,10 @@ export const Skills = () => {
         </p>
         <h2 className='py-4'>What I Can Do</h2>
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
-          {/* //Hacer componente */}
-          <div className='py-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <img
-                  src='./src/assets/LogoSmartFinance.jpg'
-                  width='64px'
-                  height='64px'
-                  alt=''
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3>TEXZTO</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className='py-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <img
-                  src='./src/assets/LogoSmartFinance.jpg'
-                  width='64px'
-                  height='64px'
-                  alt=''
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3>TEXZTO</h3>
-              </div>
-            </div>
-          </div>
-          <div className='py-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <img
-                  src='./src/assets/LogoSmartFinance.jpg'
-                  width='64px'
-                  height='64px'
-                  alt=''
-                />
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3>TEXZTO</h3>
-              </div>
-            </div>
-          </div>
+          <SkillItem src='./src/assets/skills/HTML.png' name='HTML' />
+          <SkillItem src='./src/assets/skills/CSS.png' name='CSS' />
+          <SkillItem src='./src/assets/skills/REACT.png' name='REACT' />
+          <SkillItem src='./src/assets/skills/VUE.png' name='VUE' />
         </div>
       </div>
     </div>

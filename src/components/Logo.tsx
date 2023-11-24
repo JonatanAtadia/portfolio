@@ -1,5 +1,5 @@
 const asd = {
-  src: './src/assets/LogoSmartFinance.jpg',
+  src: './src/assets/Logo.png',
   alt: 'logo',
 };
 
