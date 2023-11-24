@@ -2,21 +2,33 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
+const socialIcons = [
+  {
+    icon: <FaLinkedinIn />,
+    name: 'LinkedIn',
+    url: 'URL LinkedIn',
+  },
+  { icon: <FaGithub />, name: 'GitHub', url: 'URL GitHub' },
+  {
+    icon: <AiOutlineMail />,
+    name: 'Email',
+    url: 'URL Email',
+  },
+  {
+    icon: <BsFillPersonLinesFill />,
+    name: 'Otra Red Social',
+    url: 'URL',
+  },
+];
+
 export const Social = () => {
   return (
     <>
-      <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
-        <FaLinkedinIn />
-      </div>
-      <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
-        <FaGithub />
-      </div>
-      <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
-        <AiOutlineMail />
-      </div>
-      <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-105 ease-in duration-300'>
-        <BsFillPersonLinesFill />
-      </div>
+      {socialIcons.map((social, index) => (
+        <div key={index} className='socialBtn' title={social.name}>
+          {social.icon}
+        </div>
+      ))}
     </>
   );
 };
