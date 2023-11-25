@@ -3,29 +3,7 @@ import { Logo } from './Logo';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { Social } from '../social/Social';
 import { MenuLinkItem } from './MenuLinkItem';
-
-const menuLinkList = [
-  {
-    name: 'Home',
-    href: '/#home',
-  },
-  {
-    name: 'About',
-    href: '/#about',
-  },
-  {
-    name: 'Skills',
-    href: '/#skills',
-  },
-  {
-    name: 'Projects',
-    href: '/#projects',
-  },
-  {
-    name: 'Contact',
-    href: '/#contact',
-  },
-];
+import { menuLinkList } from '../../constants.tsx';
 
 export const NavBar = () => {
   const [nav, setNav] = useState(false);

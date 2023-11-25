@@ -1,11 +1,5 @@
 import { SkillItem } from './SkillItem';
-
-const skillsList = [
-  { src: './src/assets/skills/HTML.png', name: 'HTML' },
-  { src: './src/assets/skills/CSS.png', name: 'CSS' },
-  { src: './src/assets/skills/REACT.png', name: 'React' },
-  { src: './src/assets/skills/VUE.png', name: 'Vue' },
-];
+import { skillsList } from '../../constants.tsx';
 
 export const Skills = () => {
   return (

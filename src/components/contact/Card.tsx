@@ -1,17 +1,10 @@
 import { Social } from '../social/Social';
+import { userData } from '../../constants.tsx';
 
 interface ImageProps {
   src: string;
   alt: string;
 }
-
-const userData = {
-  name: 'Jonatan Atadia',
-  title: 'Full-Stack Developer',
-  description:
-    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, quam aliquam. Officiis dolores quo omnis aut',
-  imageSrc: './src/assets/FondoSmartFinance.jpg',
-};
 
 const Image: React.FC<ImageProps> = ({ src, alt }) => (
   <img

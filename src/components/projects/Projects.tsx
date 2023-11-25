@@ -1,31 +1,5 @@
 import { ProjectItem } from './ProjectItem';
-
-const projectsList = [
-  {
-    title: 'titulo1',
-    technology: 'tecnologias que utliza',
-    imageSrc: './src/assets/FondoSmartFinance.jpg',
-    projectUrl: '/property',
-  },
-  {
-    title: 'titulo2',
-    technology: 'tecnologias que utliza',
-    imageSrc: './src/assets/FondoSmartFinance.jpg',
-    projectUrl: '/property',
-  },
-  {
-    title: 'titulo3',
-    technology: 'tecnologias que utliza',
-    imageSrc: './src/assets/FondoSmartFinance.jpg',
-    projectUrl: '/property',
-  },
-  {
-    title: 'titulo4',
-    technology: 'tecnologias que utliza',
-    imageSrc: './src/assets/FondoSmartFinance.jpg',
-    projectUrl: '/property',
-  },
-];
+import { projectsList } from '../../constants.tsx';
 
 export const Projects = () => {
   return (
