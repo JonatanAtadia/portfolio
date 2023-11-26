@@ -4,6 +4,7 @@ import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { Social } from '../social/Social';
 import { MenuLinkItem } from './MenuLinkItem';
 import { menuLinkList } from '../../constants.tsx';
+import { Languages } from '../languages/Languages.tsx';
 
 export const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -59,7 +60,9 @@ export const NavBar = () => {
             {menuLinkList.map((menuLink, index) => (
               <MenuLinkItem key={index} {...menuLink} />
             ))}
+            <Languages />
           </ul>
+
           <div onClick={handleNav} className='md:hidden cursor-pointer'>
             <AiOutlineMenu size={30} />
           </div>
@@ -103,6 +106,7 @@ export const NavBar = () => {
                   onClick={() => setNav(false)}
                 />
               ))}
+              <Languages />
             </ul>
 
             <div className='pt-40 '>

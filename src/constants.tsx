@@ -2,6 +2,11 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
+export const languages = [
+  { label: 'Spanish', code: 'es' },
+  { label: 'English', code: 'en' },
+];
+
 export const menuLinkList = [
   {
     name: 'Home',
