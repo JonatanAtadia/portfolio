@@ -1,12 +1,24 @@
 export const About = () => {
   return (
-    <div id='about' className='w-full md:h-screen p-2 flex items-center py-16'>
+    <div id='about' className='w-full lg:h-screen p-2 flex items-center'>
       <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
         <div className='col-span-2'>
           <p className='uppercase text-xl tracking-widest text-[#5651e5]'>
             About
           </p>
           <h2 className='py-4'>Who I am</h2>
+          <p className='py-2 text-gray-600'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            minima maxime dolorum natus qui molestias quidem veniam? Amet, quis?
+            Inventore commodi dolores accusantium sint facilis. Et nesciunt
+            dolor mollitia consequuntur?
+          </p>
+          <p className='py-2 text-gray-600'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            minima maxime dolorum natus qui molestias quidem veniam? Amet, quis?
+            Inventore commodi dolores accusantium sint facilis. Et nesciunt
+            dolor mollitia consequuntur?
+          </p>
           <p className='py-2 text-gray-600'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
             minima maxime dolorum natus qui molestias quidem veniam? Amet, quis?

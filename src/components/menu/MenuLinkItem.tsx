@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 interface MenuLinkItemInfo {
   name: string;
   href: string;
@@ -9,6 +10,8 @@ export const MenuLinkItem: React.FC<MenuLinkItemInfo> = ({
   href,
   onClick,
 }) => {
+  const { t } = useTranslation();
+
   const handleClick = () => {
     if (onClick) {
       onClick();
@@ -20,7 +23,7 @@ export const MenuLinkItem: React.FC<MenuLinkItemInfo> = ({
       className='ml-10 text-sm uppercase hover:border-b py-4'
       onClick={handleClick}
     >
-      <a href={href}>{name}</a>
+      <a href={href}>{t(`menuLink.${name.toLowerCase()}`)}</a>
     </li>
   );
 };

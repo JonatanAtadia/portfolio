@@ -1,8 +1,12 @@
 {
-    "title": "2222222",
+    "title": "aaaaa1111",
     "label": "Select another language!",
     "about": "About",
     "menuLink": {
-        "home": "Casa"
+        "home": "Home",
+        "about": "About",
+        "skills": "Habilidades",
+        "projects": "Proyectos",
+        "contact": "Contacto"
     }
 }

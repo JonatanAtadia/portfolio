@@ -3,6 +3,10 @@
     "label": "Select another language!",
     "about": "About",
     "menuLink": {
-        "home": "Españita"
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
     }
 }
