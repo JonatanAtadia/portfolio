@@ -1,4 +1,5 @@
-import { RiRadioButtonFill } from 'react-icons/ri';
+import { TechnologyList } from './TechnologyList';
+
 export const Property = () => {
   return (
     <div className='w-full'>
@@ -29,28 +30,7 @@ export const Property = () => {
           <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
           <button className='px-8 py-2 mt-4 '>Code</button>
         </div>
-        <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
-          <div className='p-2'>
-            <p className='text-center font-bold pb-2'>tecnologias</p>
-            <div className='grid grid-cols-3 md:grid-cols-1'>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> React
-              </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> React
-              </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> React
-              </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> React
-              </p>
-              <p className='text-gray-600 py-2 flex items-center'>
-                <RiRadioButtonFill className='pr-1' /> React
-              </p>
-            </div>
-          </div>
-        </div>
+        <TechnologyList />
         <a href='/#home'>
           <p className='underline cursor-pointer'>Back</p>
         </a>

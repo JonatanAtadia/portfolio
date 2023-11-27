@@ -9,7 +9,7 @@ export const Languages = () => {
   };
 
   return (
-    <div className='ml-10 text-sm uppercase hover:border-b py-4'>
+    <div className='ml-10 text-sm uppercase hover:border-b py-4 text-black'>
       <select defaultValue={i18n.language} onChange={onChangeLang}>
         {languages.map(({ code }) => (
           <option key={code} value={code}>

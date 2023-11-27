@@ -98,3 +98,15 @@ export const socialItems = [
     url: 'URL',
   },
 ];
+
+export const technologyList = [
+  {
+    name: 'Reaaaact',
+  },
+  {
+    name: 'Reaaaact111',
+  },
+  {
+    name: 'Reaaaact2222',
+  },
+];
