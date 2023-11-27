@@ -1,12 +1,14 @@
 {
-    "title": "aaaaa1111",
-    "label": "Select another language!",
-    "about": "About",
     "menuLink": {
         "home": "Home",
         "about": "About",
         "skills": "Skills",
         "projects": "Projects",
         "contact": "Contact"
+    },
+    "home":{
+        "header": "Let's build something together",
+        "title": "Hi, I'm Jonatan A Full-Stack Web Developer",
+        "description": "Passionate about programming, I specialize in both Front-End and Back-End development. Constant evolution drives me, and I enjoy sharing knowledge with colleagues. Join me on this development journey!"
     }
 }
