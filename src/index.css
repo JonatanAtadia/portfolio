@@ -40,4 +40,24 @@ html {
   .menuSections {
     @apply uppercase text-xl tracking-widest font-bold text-[#5651e5];
   }
+
+  .navBarMobile {
+    @apply fixed left-0 top-0 w-full h-screen bg-black/70 md:hidden;
+  }
+
+  .navBarWithShadow {
+    @apply fixed w-full h-20 shadow-xl z-[100];
+  }
+
+  .navBarWithOutShadow {
+    @apply fixed w-full h-20 z-[100];
+  }
+
+  .menuMobileOpen {
+    @apply fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[35%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500;
+  }
+
+  .menuMobileClose {
+    @apply fixed left-[-100%] top-0 p-10 ease-in duration-500;
+  }
 }

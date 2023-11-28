@@ -20,11 +20,7 @@ export const NavBar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY >= 90) {
-        setShadow(true);
-      } else {
-        setShadow(false);
-      }
+      setShadow(window.scrollY >= 90);
     };
 
     const handleRouteChange = () => {
@@ -48,11 +44,7 @@ export const NavBar = () => {
   return (
     <div
       style={{ backgroundColor: `${navBg}` }}
-      className={
-        shadow
-          ? 'fixed w-full h-20 shadow-xl z-[100]'
-          : 'fixed w-full h-20 z-[100]'
-      }
+      className={shadow ? 'navBarWithShadow' : 'navBarWithOutShadow'}
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Logo />
@@ -71,18 +63,8 @@ export const NavBar = () => {
         </div>
       </div>
 
-      <div
-        className={
-          nav ? 'fixed left-0 top-0 w-full h-screen bg-black/70 md:hidden' : ''
-        }
-      >
-        <div
-          className={
-            nav
-              ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
-              : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
-          }
-        >
+      <div className={nav ? 'navBarMobile' : ''}>
+        <div className={nav ? 'menuMobileOpen' : 'menuMobileClose'}>
           <div>
             <div className='flex w-full items-center justify-between'>
               <Logo />
