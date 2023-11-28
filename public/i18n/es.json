@@ -8,7 +8,40 @@
     },
     "home":{
         "header": "Construyamos algo juntos",
-        "title": "Hola, Soy Jonatan, un Desarrollador Full-Stack Web",
+        "title1": "Hola, Soy Jonatan",
+        "title2": "Un Desarrollador Full-Stack Web",
         "description": "Apasionado por la programación, me dedico al desarrollo Front-End como al Back-End. La evolución constante me impulsa, y disfruto compartiendo conocimientos con colegas. ¡Únete a mi viaje de desarrollo!"
+    },
+    "about":{
+        "header": "Sobre mi",
+        "title": "Quien soy",
+        "description": "¡Hola! Soy Jonatan Atadia, nacido el 31 de marzo de 1989 en Bragado, Buenos Aires, Argentina. Desde temprana edad, he sido un apasionado de la programación, pero fue en 2017, cuando me quedé sin trabajo, que decidí sumergirme de lleno en el mundo del desarrollo. Mis primeros pasos como autodidacta marcaron el comienzo de una travesía dedicada a la exploración y el aprendizaje constante. Devoré libros y tutoriales, exploré diversas tecnologías y lenguajes, y me convertí en un desarrollador versátil. Mi motivación principal es el deseo continuo de aprender. Desde entonces, no he dejado de trabajar y estudiar para evolucionar como desarrollador. Disfruto compartiendo conocimientos con mis compañeros desarrolladores y considero que el mejor entorno de trabajo es aquel que me desafía a evolucionar constantemente. ¿Listo para descubrir más sobre mi viaje en el desarrollo y la programación?",
+        "link": "Mira algunos de mis últimos proyectos."
+    },
+    "skills":{
+        "header": "Habilidades",
+        "title": "Que puedo hacer"
+    },
+    "projects":{
+        "header": "Proyectos",
+        "title": "Lo que he construido"
+    },
+    "contact":{
+        "header": "Contacto",
+        "title": "Ponerse en contacto",
+        "card": {
+            "name": "Jonatan Atadia",
+            "subtitle": "Desarrollador Full-Stack",
+            "description": "Apasionado por la programación, me dedico al desarrollo Front-End como al Back-End. La evolución constante me impulsa, y disfruto compartiendo conocimientos con colegas. ¡Únete a mi viaje de desarrollo!",
+            "title":"Conectate conmigo"
+        },
+        "form":{
+            "name": "Nombre",
+            "phone": "Telefono",
+            "email": "Email",
+            "subject": "Asunto",
+            "message": "Mensaje",
+            "button": "Enviar Mensaje"
+        }
     }
 }

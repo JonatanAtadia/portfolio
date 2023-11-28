@@ -1,13 +1,16 @@
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import { Card } from './Card';
 import { Form } from './Form';
+import { useTranslation } from 'react-i18next';
 
 export const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <div id='contact' className='w-full lg:h-screen'>
       <div className='max-w-[1240px] mx-auto px-2 py-16 w-full'>
-        <p className='menuSections'>Contact</p>
-        <h2 className='py-4'>Get In Touch</h2>
+        <p className='menuSections'>{t(`contact.header`)}</p>
+        <h2 className='py-4'>{t(`contact.title`)}</h2>
         <div className='grid lg:grid-cols-5 gap-8'>
           <Card />
           <Form />

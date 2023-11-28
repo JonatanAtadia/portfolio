@@ -1,5 +1,5 @@
 import { Social } from '../social/Social';
-import { userData } from '../../constants.tsx';
+import { useTranslation } from 'react-i18next';
 
 interface ImageProps {
   src: string;
@@ -15,19 +15,21 @@ const Image: React.FC<ImageProps> = ({ src, alt }) => (
 );
 
 export const Card = () => {
+  const { t } = useTranslation();
+
   return (
     <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
       <div className='lg:p-4 h-full'>
         <div>
-          <Image src={userData.imageSrc} alt='' />
+          <Image src='./src/assets/FondoSmartFinance.jpg' alt='' />
         </div>
         <div>
-          <h2 className='py-2'>{userData.name}</h2>
-          <p>{userData.title}</p>
-          <p className='py-4'>{userData.description}</p>
+          <h2 className='py-2'>{t(`contact.card.name`)}</h2>
+          <p>{t(`contact.card.subtitle`)}</p>
+          <p className='py-4'>{t(`contact.card.description`)}</p>
         </div>
         <div>
-          <p className='uppercase pt-8'>Connect with me</p>
+          <p className='uppercase pt-8'>{t(`contact.card.title`)}</p>
           <div className='flex items-center justify-between py-4'>
             <Social />
           </div>

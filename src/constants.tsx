@@ -30,14 +30,6 @@ export const menuLinkList = [
   },
 ];
 
-export const userData = {
-  name: 'Jonatan Atadia',
-  title: 'Full-Stack Developer',
-  description:
-    'Apasionado por la programación, me dedico al desarrollo Front-End como al Back-End. La evolución constante me impulsa, y disfruto compartiendo conocimientos con colegas. ¡Únete a mi viaje de desarrollo!',
-  imageSrc: './src/assets/FondoSmartFinance.jpg',
-};
-
 export const projectsList = [
   {
     title: 'titulo1',

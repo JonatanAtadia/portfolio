@@ -38,6 +38,6 @@ html {
   }
 
   .menuSections {
-    @apply uppercase text-xl tracking-widest text-[#5651e5];
+    @apply uppercase text-xl tracking-widest font-bold text-[#5651e5];
   }
 }

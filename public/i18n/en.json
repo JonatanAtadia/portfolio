@@ -8,7 +8,41 @@
     },
     "home":{
         "header": "Let's build something together",
-        "title": "Hi, I'm Jonatan A Full-Stack Web Developer",
+        "title1": "Hi, I'm Jonatan",
+        "title2": "A Full-Stack Web Developer",
         "description": "Passionate about programming, I specialize in both Front-End and Back-End development. Constant evolution drives me, and I enjoy sharing knowledge with colleagues. Join me on this development journey!"
+    },
+    "about":{
+        "header": "About",
+        "title": "Who I am",
+        "description": "Hello! I'm Jonatan Atadia, born on March 31, 1989, in Bragado, Buenos Aires, Argentina. From an early age, I've been passionate about programming, but it was in 2017, when I found myself unemployed, that I decided to fully immerse myself in the world of development. My first steps as a self-taught individual marked the beginning of a journey dedicated to exploration and constant learning. I devoured books and tutorials, explored various technologies and languages, and became a versatile developer. My main motivation is the continuous desire to learn. Since then, I haven't stopped working and studying to evolve as a developer. I enjoy sharing knowledge with my fellow developers, and I believe the best working environment is one that challenges me to constantly evolve. Ready to discover more about my journey in development and programming?",
+        "link": "Check out some of my latest projects."
+    },
+    "skills":{
+        "header": "Skills",
+        "title": "What I Can Do"
+    },
+    "projects":{
+        "header": "Projects",
+        "title": "What I've Build"
+    },
+    "contact":{
+        "header": "Contact",
+        "title": "Get In Touch",
+        "card": {
+            "name": "Jonatan Atadia",
+            "subtitle": "Full-Stack Developer",
+            "description": "Passionate about programming, I specialize in both Front-End and Back-End development. Constant evolution drives me, and I enjoy sharing knowledge with colleagues. Join me on my development journey!",
+            "title":"Connect with me"
+        },
+        "form":{
+            "name": "Name",
+            "phone": "Phone",
+            "email": "Email",
+            "subject": "Subject",
+            "message": "Message",
+            "button": "Send Message"
+        }
     }
+
 }
