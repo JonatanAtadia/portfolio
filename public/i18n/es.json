@@ -6,6 +6,10 @@
         "projects": "Proyectos",
         "contact": "Contacto"
     },
+    "navBar":{
+        "title1": "Construyamos algo legendario juntos.",
+        "title2": "Conectémonos"
+    },
     "home":{
         "header": "Construyamos algo juntos",
         "title1": "Hola, Soy Jonatan",

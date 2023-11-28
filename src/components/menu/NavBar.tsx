@@ -5,12 +5,14 @@ import { Social } from '../social/Social';
 import { MenuLinkItem } from './MenuLinkItem';
 import { menuLinkList } from '../../constants.tsx';
 import { Languages } from '../languages/Languages.tsx';
+import { useTranslation } from 'react-i18next';
 
 export const NavBar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState('#ecf0f3');
   const [linkColor, setLinkColor] = useState('#1f2937');
+  const { t } = useTranslation();
 
   const handleNav = () => {
     setNav(!nav);
@@ -92,9 +94,7 @@ export const NavBar = () => {
               </div>
             </div>
             <div className='border-b border-gray-300 my-4'>
-              <p className='w-[85%] md:w-[90%] py-4'>
-                Let's build something legendary together
-              </p>
+              <p className='w-[85%] md:w-[90%] py-4'>{t(`navBar.title1`)}</p>
             </div>
           </div>
           <div className='py-4 flex flex-col'>
@@ -110,9 +110,7 @@ export const NavBar = () => {
             </ul>
 
             <div className='pt-40 '>
-              <p className='uppercase tracking-widest text-[#5651e5]'>
-                Let's connect
-              </p>
+              <p className='menuSections text-sm'>{t(`navBar.title2`)}</p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                 <Social />
               </div>
