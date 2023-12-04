@@ -62,14 +62,13 @@ export const skillsList = [
   { src: './src/assets/skills/CSS.png', name: 'CSS' },
   { src: './src/assets/skills/REACT.png', name: 'React' },
   { src: './src/assets/skills/VUE.png', name: 'Vue' },
-  { src: './src/assets/skills/HTML.png', name: 'HTML' },
-  { src: './src/assets/skills/CSS.png', name: 'CSS' },
-  { src: './src/assets/skills/REACT.png', name: 'React' },
-  { src: './src/assets/skills/VUE.png', name: 'Vue' },
-  { src: './src/assets/skills/HTML.png', name: 'HTML' },
-  { src: './src/assets/skills/CSS.png', name: 'CSS' },
-  { src: './src/assets/skills/REACT.png', name: 'React' },
-  { src: './src/assets/skills/VUE.png', name: 'Vue' },
+  { src: './src/assets/skills/JavaScript.png', name: 'JavaScript' },
+  { src: './src/assets/skills/TypeScript.png', name: 'TypeScript' },
+  { src: './src/assets/skills/PHP.png', name: 'PHP' },
+  { src: './src/assets/skills/NodeJs.png', name: 'NodeJs' },
+  { src: './src/assets/skills/MongoDB.png', name: 'MongoDB' },
+  { src: './src/assets/skills/Git.png', name: 'Git' },
+  { src: './src/assets/skills/NestJs.png', name: 'NestJs' },
 ];
 
 export const socialItems = [
